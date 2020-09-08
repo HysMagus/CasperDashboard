@@ -1,0 +1,33 @@
+<aside class="sidebar">
+	<div class="sidebar-container">
+
+		{{> app/_common/sidebar/header/header}}
+
+		<nav class="menu">
+			<ul class="sidebar-menu metismenu" id="sidebar-menu">
+
+				<li {{#is pagename "===" "dashboard"}}class="active"{{/is}} >
+					<a href="index.html">
+						<i class="fa fa-home"></i> Dashboard
+					</a>
+				</li>
+
+
+				<li {{#is pagename "===" "Rasikh.io"}}class="active"{{/is}} >
+					<a href="https://rasikh.io">
+						<i class="fa fa-pencil-square-o"></i> Rasikh.io
+					</a>
+				</li>
+
+
+
+			</ul>
+		</nav>
+
+	</div>
+
+	{{> app/_common/sidebar/customize/customize}}
+
+</aside>
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+<div class="sidebar-mobile-menu-handle" id="sidebar-mobile-menu-handle"></div>
